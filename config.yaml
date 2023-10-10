@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    preethi:
+      email: preethi@gmail.com
+      name: Preethi Selvam
+      password: $2b$12$ZIOfbHiewwL3ZCJUXcLmTeB7bjrG1xSE.4NMREZupDTFG2y9w255O # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - preethi@gmail.com
