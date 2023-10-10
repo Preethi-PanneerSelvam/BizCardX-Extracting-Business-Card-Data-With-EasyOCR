@@ -222,7 +222,7 @@ if st.session_state["authentication_status"]:
                 connect = mysql.connector.connect(
                     host="localhost",
                     user="root",
-                    password="12345",
+                    password="your password",
                     auth_plugin='mysql_native_password')
 
                 # Create a new database and use it
@@ -232,7 +232,7 @@ if st.session_state["authentication_status"]:
                 connect.database = "bizcard_db"
 
                 # Connect to the newly created database
-                engine = create_engine('mysql+mysqlconnector://root:12345@localhost/bizcard_db', echo=False)
+                engine = create_engine('mysql+mysqlconnector://root:password@localhost/bizcard_db', echo=False)
 
                 try:
                     # Use pandas to insert the DataFrame data into the SQL Database table
@@ -277,7 +277,7 @@ if st.session_state["authentication_status"]:
                 conn = mysql.connector.connect(
                     host="localhost",
                     user="root",
-                    password="12345",
+                    password="password",
                     auth_plugin='mysql_native_password',
                     database="bizcard_db")
 
@@ -358,7 +358,7 @@ if st.session_state["authentication_status"]:
                 conn_del = mysql.connector.connect(
                     host="localhost",
                     user="root",
-                    password="12345",
+                    password="password",
                     auth_plugin='mysql_native_password',
                     database="bizcard_db")
 
